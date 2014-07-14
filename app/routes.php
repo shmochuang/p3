@@ -21,3 +21,27 @@ Route::get('/practice', function() {
 	echo 'Hello World';
 	
 });
+
+// lorem ipsum routes
+Route::get('/lorem', function() {
+	
+	return View::make('lorem');
+	
+});
+
+Route::get('/lorem/{number}', function($number) {
+	
+	$generator = new Badcow\LoremIpsum\Generator();
+	$paragraphs = $generator->getParagraphs($number);
+	$data['paragraphs'] = $paragraphs;
+	return View::make('lorem', $data);
+	
+});
+
+
+// random user routes
+Route::get('/randusr', function() {
+	
+	return View::make('randusr');
+	
+});

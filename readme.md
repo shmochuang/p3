@@ -6,6 +6,7 @@ p3.shmochuang.com
 An app that generates either Lorem Ipsum text or random users based on the specifications of the user. 
 
 #Details for teaching team
+Used Badcow/Lorem and fzan..
 
 
 #Outside code

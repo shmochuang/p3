@@ -31,9 +31,7 @@ Route::get('/lorem', function() {
 
 Route::get('/lorem/{number}', function($number) {
 	
-	$generator = new Badcow\LoremIpsum\Generator();
-	$paragraphs = $generator->getParagraphs($number);
-	$data['paragraphs'] = $paragraphs;
+	$data['number'] = $number;
 	return View::make('lorem', $data);
 	
 });

@@ -17,7 +17,7 @@
 	<section class="generated">
 	
 		<?php $generator = new Badcow\LoremIpsum\Generator();
-	$paragraphs = $generator->getParagraphs(5);
+	$paragraphs = $generator->getParagraphs($number);
 		echo implode('<p>', $paragraphs);?>
 		
 	</section>

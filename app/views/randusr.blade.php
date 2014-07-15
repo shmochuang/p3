@@ -13,6 +13,10 @@
 
 	<h1>Random User Generator</h1>
 
-	
+	<?php $faker = Faker\Factory::create(); 
+		for ($i=0; $i < 10; $i++) {
+  echo $faker->name."<br>";
+}
+	?>
 
 @stop

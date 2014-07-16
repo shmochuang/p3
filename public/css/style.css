@@ -6,7 +6,7 @@
 
 body {
 	background-color: #EFEDF2;
-	font-family: sans-serif;
+	font-family: raleway, sans-serif;
 	text-align: center;
 }
 
@@ -19,7 +19,7 @@ h1 {
 
 /****************************************************
 
-	STYLING THE LOGO
+	STYLING THE LOGO/IMAGES
 
 ****************************************************/
 
@@ -27,10 +27,15 @@ header {
 	padding-bottom: 40px;
 }
 
-img {
+#logo {
 	border: 1px dotted #ED6A4C;
 	width: 75px;
 	height: 75px;
+	margin-bottom: 10px;
+}
+
+#moustache {
+	vertical-align: middle;
 }
 
 
@@ -76,11 +81,11 @@ a img:hover {
 
 /* Randusr content */
 .users_out {
-	width: 40%;
-	border: black dotted 1px;
-	margin-left: 30%;
-	padding: 15px;
 	text-align: left;	
+}
+
+.content {
+	font-family: Lato, sans-serif;
 }
 
 

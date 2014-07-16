@@ -15,7 +15,7 @@
 	
 		
 	<!-- generate content -->
-	<div class="generated">
+	<div class="generated content">
 	
 	
 		@if ($_POST["hipster"] != "on")

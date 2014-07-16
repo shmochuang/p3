@@ -18,9 +18,10 @@
 	<!-- form -->	
 	{{ Form::open(); }}
 	{{ Form::label("num_p", "How many paragraphs?"); }}
-	{{ Form::text("num_p"); }}
+	{{ Form::text("num_p", "5"); }}
 	<br><br>
 	
+	<img src=<?php echo URL::asset('images/curled5.png'); ?> alt='moustache' id="moustache">   
 	{{ Form::label("hipster", "Use Hipster Words?"); }}
 	{{ Form::hidden("hipster", false); }} <!-- included to handle $_POST if box is unchecked -->
 	{{ Form::checkbox("hipster", "on",  true); }}

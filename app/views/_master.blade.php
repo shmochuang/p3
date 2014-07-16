@@ -5,6 +5,7 @@
 	<title>@yield('title',"Developer's Best Friend")</title>
 
 	<link rel="stylesheet" href="../css/style.css" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Raleway|Lato' rel='stylesheet' type='text/css'>
 	
 	@yield('head')
 
@@ -12,7 +13,7 @@
 
 <body>
 	<header >
-		<a href="/"><img src="<?php echo URL::asset('images/dbflogo.png'); ?>"></a><br>
+		<a href="/"><img src="<?php echo URL::asset('images/dbflogo.png'); ?>" alt="logo" id="logo"></a><br>
 		<!-- links -->
 		<a href="/lorem" class="genlink">Lorem Ipsum Generator</a> |
 		<a href="/randusr" class="genlink">Random User Generator</a>

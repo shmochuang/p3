@@ -21,7 +21,7 @@
 	
 	<!-- number of users -->
 	{{ Form::label("num_u", "Number of Users"); }}
-	{{ Form::text("num_u"); }}
+	{{ Form::text("num_u", "5"); }}
 	<br>
 	
 	

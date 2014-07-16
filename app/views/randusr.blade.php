@@ -17,7 +17,7 @@
 	<h1>Random User Generator</h1>
 	
 
-	<div class="users_out">
+	<div class="generated users_out content">
 	
 		<!-- create users -->
 		<?php $faker = Faker\Factory::create(); ?>

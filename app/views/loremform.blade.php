@@ -10,6 +10,8 @@
 
 @section('content')
 
+<!-- links -->
+
 	<h1>Lorem Ipsum Generator</h1>
 
 

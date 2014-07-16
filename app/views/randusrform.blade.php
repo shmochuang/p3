@@ -17,8 +17,15 @@
 
 	<!-- form -->	
 	{{ Form::open(); }}
+	
+	<!-- number of users -->
 	{{ Form::label("num_u", "How many users?"); }}
-	{{ Form::text("num_u"); }}<br><br>
+	{{ Form::text("num_u"); }}<br>
+	
+	<!-- address desired? -->
+	{{ Form::label("address", "Would you like to include an address?"); }}
+	{{ Form::checkbox("address", "on"); }}
+	<br>
 	{{ Form::submit("Generate"); }}
 
 

@@ -20,20 +20,20 @@
 	
 	
 	<!-- number of users -->
-	{{ Form::label("num_u", "How many users?"); }}
+	{{ Form::label("num_u", "Number of Users"); }}
 	{{ Form::text("num_u"); }}
 	<br>
 	
 	
 	<!-- address desired? -->
-	{{ Form::label("address", "Would you like to include an address?"); }}
+	{{ Form::label("address", "Include Adress"); }}
 	{{ Form::hidden("address", false); }} <!-- included to handle $_POST if box is unchecked -->
 	{{ Form::checkbox("address", "on",  true); }}
 	<br>
 	
 	
 	<!-- text desired? -->
-	{{ Form::label("text", "Would you like to include user text?"); }}
+	{{ Form::label("text", "Include Text"); }}
 	{{ Form::hidden("text", false); }} <!-- included to handle $_POST if box is unchecked -->
 	{{ Form::checkbox("text", "on",  true); }}
 	<br>

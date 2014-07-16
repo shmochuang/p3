@@ -34,9 +34,14 @@ Route::post('/lorem', function() {
 
 
 // random user routes
-Route::get('/randusr/{number}', function($number) {
+Route::get('/randusr', function() {
 	
-	$data['number'] = $number;
-	return View::make('randusr', $data);
+	return View::make('randusrform');
+	
+});
+
+Route::post('/randusr', function() {
+	
+	return View::make('randusr');
 	
 });

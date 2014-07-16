@@ -1,22 +1,29 @@
-@extends('_master')
+@extends('randusrform')
 
 
 @section('head')
-	// stylesheet
+
 @stop
 
 @section('title')
 	Random User Generator
 @stop
 
+
+
+
 @section('content')
-
+	
 	<h1>Random User Generator</h1>
+	
 
-	<?php $faker = Faker\Factory::create(); 
-		for ($i=0; $i < $number; $i++) {
-  echo $faker->name."<br>";
-}
-	?>
+	<div>
+		<?php 
+			$faker = Faker\Factory::create(); 
+			for ($i=0; $i < $_POST['num_u']; $i++) {
+				echo "<li>".$faker->name."</li>";
+			}
+		?>
+	</div>
 
 @stop

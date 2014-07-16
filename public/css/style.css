@@ -26,6 +26,10 @@ a:visited {
 	color: ##ED6A4C;
 }
 
+a img:hover {
+	border: 2px solid #F2C206;
+}
+
 .generated {
 	width: 50%;
 	border: black dotted 1px;

@@ -1,0 +1,43 @@
+body {
+	background-color: #EFEDF2;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+img {
+	border: 1px dotted #ED6A4C;
+	width: 75px;
+	height: 75px;
+}
+
+.genlink {
+	text-align: center;
+}
+
+a {
+	color: #ED6A4C;
+}
+a:hover {
+	text-decoration: line-through;
+	color: #F2C206;
+	text-shadow: 2px 2px 3px #FFE380;
+}
+a:visited {
+	color: ##ED6A4C;
+}
+
+.generated {
+	width: 50%;
+	border: black dotted 1px;
+	margin-left: 25%;
+	padding: 5px 15px 5px 15px;
+}
+
+h1 {
+	color: #ED6A4C;
+}
+
+header {
+	padding-bottom: 40px;
+	
+}

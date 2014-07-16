@@ -11,28 +11,24 @@
 |
 */
 
+// landing page
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('index');
 });
 
-Route::get('/practice', function() {
-	
-	echo 'Hello World';
-	
-});
+
 
 // lorem ipsum routes
 Route::get('/lorem', function() {
 	
-	return View::make('lorem');
+	return View::make('loremform');
 	
 });
 
-Route::get('/lorem/{number}', function($number) {
+Route::post('/lorem', function() {
 	
-	$data['number'] = $number;
-	return View::make('lorem', $data);
+	return View::make('lorem');
 	
 });
 

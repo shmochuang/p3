@@ -71,21 +71,28 @@ a img:hover {
 
 ****************************************************/
 
-/* Lorem content */
 .generated {
 	width: 50%;
 	border: black dotted 1px;
 	margin-left: 25%;
 	padding: 15px;
+	font-family: Lato, sans-serif;
 }
 
-/* Randusr content */
+/* only for randusr content */
 .users_out {
 	text-align: left;	
 }
 
-.content {
-	font-family: Lato, sans-serif;
+
+.lorem{
+	width: 30%;
+	float: left;
+	margin-left: 15%;
 }
 
-
+.randusr {
+	width: 30%;
+	float: right;
+	margin-right: 15%;
+}

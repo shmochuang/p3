@@ -18,7 +18,15 @@
 	<!-- form -->	
 	{{ Form::open(); }}
 	{{ Form::label("num_p", "How many paragraphs?"); }}
-	{{ Form::text("num_p"); }}<br><br>
+	{{ Form::text("num_p"); }}
+	<br><br>
+	
+	{{ Form::label("hipster", "Use Hipster Words?"); }}
+	{{ Form::hidden("hipster", false); }} <!-- included to handle $_POST if box is unchecked -->
+	{{ Form::checkbox("hipster", "on",  true); }}
+	<br><br>
+	
+	
 	{{ Form::submit("Generate"); }}
 
 

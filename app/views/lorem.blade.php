@@ -17,12 +17,36 @@
 	<!-- generate content -->
 	<div class="generated">
 	
-		<?php 
+	
+		@if ($_POST["hipster"] != "on")
+			
+			<?php 
+			
+				$generator = new Badcow\LoremIpsum\Generator();
+				$paragraphs = $generator->getParagraphs($_POST['num_p']);
+	
+			?>
+			
+			{{ implode('<p>', $paragraphs); }}
+			
+		@else
 		
-			$generator = new Badcow\LoremIpsum\Generator();
-			$paragraphs = $generator->getParagraphs($_POST['num_p']);
-			echo implode('<p>', $paragraphs);
-		?>
+			<!-- code snipit borrowed from Seth Lilly - Hipster Ipsum for Coda (link in readme.md)-->
+			<?php 
+				$ch = curl_init();
+				curl_setopt($ch, CURLOPT_URL, "http://hipsterjesus.com/api/?type=hipster-centric&paras=".$_POST['num_p']);
+				curl_setopt($ch, CURLOPT_HEADER, 0);
+				curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+				$res = curl_exec($ch);
+				error_log($res,0);
+				curl_close($ch);
+				
+				$ret = json_decode($res);
+			?>
+			
+			{{ $ret->{'text'}; }} 
+			
+		@endif
 		
 	</div>
 

@@ -5,7 +5,7 @@
 @stop
 
 @section('title')
-	Lorem Ipsum Generator
+	Random User Generator
 @stop
 
 @section('content')
@@ -24,7 +24,8 @@
 	
 	<!-- address desired? -->
 	{{ Form::label("address", "Would you like to include an address?"); }}
-	{{ Form::checkbox("address", "on"); }}
+	{{ Form::hidden("address", false); }}
+	{{ Form::checkbox("address", "on",  true); }}
 	<br>
 	{{ Form::submit("Generate"); }}
 

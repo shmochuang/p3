@@ -26,7 +26,7 @@
 	
 	
 	<!-- address desired? -->
-	{{ Form::label("address", "Include Adress"); }}
+	{{ Form::label("address", "Include Address"); }}
 	{{ Form::hidden("address", false); }} <!-- included to handle $_POST if box is unchecked -->
 	{{ Form::checkbox("address", "on",  true); }}
 	<br>

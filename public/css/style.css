@@ -1,7 +1,30 @@
+/****************************************************
+
+	GENERAL STYLES
+
+****************************************************/
+
 body {
 	background-color: #EFEDF2;
 	font-family: sans-serif;
 	text-align: center;
+}
+
+h1 {
+	color: #ED6A4C;
+}
+
+
+
+
+/****************************************************
+
+	STYLING THE LOGO
+
+****************************************************/
+
+header {
+	padding-bottom: 40px;
 }
 
 img {
@@ -10,9 +33,13 @@ img {
 	height: 75px;
 }
 
-.genlink {
-	text-align: center;
-}
+
+
+/****************************************************
+
+	STYLING THE LINKS
+
+****************************************************/
 
 a {
 	color: #ED6A4C;
@@ -30,18 +57,30 @@ a img:hover {
 	border: 2px solid #F2C206;
 }
 
+
+
+
+/****************************************************
+
+	STYLING THE CONTENT
+
+****************************************************/
+
+/* Lorem content */
 .generated {
 	width: 50%;
 	border: black dotted 1px;
 	margin-left: 25%;
-	padding: 5px 15px 5px 15px;
+	padding: 15px;
 }
 
-h1 {
-	color: #ED6A4C;
+/* Randusr content */
+.users_out {
+	width: 40%;
+	border: black dotted 1px;
+	margin-left: 30%;
+	padding: 15px;
+	text-align: left;	
 }
 
-header {
-	padding-bottom: 40px;
-	
-}
+

@@ -1,12 +1,12 @@
 @extends('_master')
 
 
-@section('head')
-@stop
 
 @section('title')
 	Random User Generator
 @stop
+
+
 
 @section('content')
 
@@ -18,15 +18,27 @@
 	<!-- form -->	
 	{{ Form::open(); }}
 	
+	
 	<!-- number of users -->
 	{{ Form::label("num_u", "How many users?"); }}
-	{{ Form::text("num_u"); }}<br>
+	{{ Form::text("num_u"); }}
+	<br>
+	
 	
 	<!-- address desired? -->
 	{{ Form::label("address", "Would you like to include an address?"); }}
-	{{ Form::hidden("address", false); }}
+	{{ Form::hidden("address", false); }} <!-- included to handle $_POST if box is unchecked -->
 	{{ Form::checkbox("address", "on",  true); }}
 	<br>
+	
+	
+	<!-- text desired? -->
+	{{ Form::label("text", "Would you like to include user text?"); }}
+	{{ Form::hidden("text", false); }} <!-- included to handle $_POST if box is unchecked -->
+	{{ Form::checkbox("text", "on",  true); }}
+	<br>
+	
+	
 	{{ Form::submit("Generate"); }}
 
 

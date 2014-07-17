@@ -4,6 +4,7 @@
 
 	<title>@yield('title',"Developer's Best Friend")</title>
 
+	<link rel= "icon" type = "image/ico" href="images/favicon.ico">
 	<link rel="stylesheet" href="../css/style.css" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Raleway|Lato' rel='stylesheet' type='text/css'>
 	

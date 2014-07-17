@@ -2,7 +2,7 @@
 
 
 @section('title')
-	Lorem Ipsum Generator
+	Developer's Best Friend
 @stop
 
 @section('content')

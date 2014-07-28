@@ -10,6 +10,10 @@ Options for hipster text in the lorem ipsum generator and extra user information
 Used Badcow/Lorem and fzainnotto/faker from packagist.
 Used Hipster Ipsum code from Seth Lilly.
 
+I know that the code is messy in randusr.blade.php when generating the password, but I couldn't figure out how to return a string from the object (which I have deleted from the models directory).
+
+I created a custom 404 page since my links aren't working on the live site.
+
 
 #Outside code
 Badcow:

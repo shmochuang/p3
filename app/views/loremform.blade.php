@@ -29,6 +29,8 @@
 	
 	
 	{{ Form::submit("Generate"); }}
+	
+	{{ Form::close(); }}
 
 
 @stop

@@ -25,6 +25,13 @@
 	<br>
 	
 	
+	<!-- password desired? -->
+	{{ Form::label("password", "Include Password"); }}
+	{{ Form::hidden("password", false); }} <!-- included to handle $_POST if box is unchecked -->
+	{{ Form::checkbox("password", "on",  true); }}
+	<br>
+	
+	
 	<!-- address desired? -->
 	{{ Form::label("address", "Include Address"); }}
 	{{ Form::hidden("address", false); }} <!-- included to handle $_POST if box is unchecked -->

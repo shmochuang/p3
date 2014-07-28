@@ -30,6 +30,11 @@
 					<!-- echo name -->
 					{{ "<li>"."Name: ".$faker->name."</li>"; }}
 	
+					<!-- if password == on, generate password and echo -->
+					@if ($_POST['password'] == 'on') 
+					<?php $password = (array) Pw::gen($_POST["password"]) ; ?>
+					{{ "<li>"."Password: ".implode($password)."</li>"; }}
+					@endif
 					
 					<!-- if address == on, echo address -->
 					@if ($_POST['address'] == 'on') 
